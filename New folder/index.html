@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>OSIS SMPN 15 Semarang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --primary: #003366;
+      --secondary: #007BFF;
+      --light: #f0f8ff;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: var(--primary);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: var(--white);
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: var(--white);
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      border-left: 5px solid var(--secondary);
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 1px solid var(--primary);
+      border-radius: 5px;
+    }
+
+    form input[type="submit"] {
+      background-color: var(--secondary);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>OSIS SMPN 15 Semarang</h1>
+    <p>Mewadahi Aspirasi, Membangun Karakter</p>
+  </header>
+
+  <nav>
+    <a href="#pembukaan">Pembukaan</a>
+    <a href="#visi-misi">Visi & Misi</a>
+    <a href="#kritik-saran">Kritik & Saran</a>
+  </nav>
+
+  <section id="pembukaan">
+    <h2>Pembukaan</h2>
+    <p>Selamat datang di website resmi OSIS SMPN 15 Semarang. Kami hadir sebagai wadah pengembangan karakter, kepemimpinan, dan aspirasi siswa. Di sini kamu bisa melihat visi, misi, dan memberikan masukan langsung kepada OSIS.</p>
+  </section>
+
+  <section id="visi-misi">
+    <h2>Visi</h2>
+    <p>Menjadi organisasi siswa yang aktif, kreatif, dan berintegritas dalam mendukung kegiatan sekolah serta membentuk karakter siswa.</p>
+    <h2>Misi</h2>
+    <ul>
+      <li>Mendorong siswa untuk aktif dalam kegiatan positif.</li>
+      <li>Menjadi jembatan antara siswa dan sekolah dalam menyampaikan aspirasi.</li>
+      <li>Menumbuhkan semangat kebersamaan dan tanggung jawab antar siswa.</li>
+    </ul>
+  </section>
+
+  <section id="kritik-saran">
+    <h2>Kritik & Saran</h2>
+    <p>Silakan isi form di bawah ini. Kritik dan saran kamu akan langsung masuk ke email OSIS.</p>
+    <form action="https://formspree.io/f/xovddbjw" method="POST">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama kamu..." required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis kritik atau saran di sini..." required></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 OSIS SMPN 15 Semarang. All rights reserved.
+  </footer>
+
+</body>
+</html>
